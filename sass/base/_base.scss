@@ -10,7 +10,23 @@
 
 html {
   // This is not about typography, this defines what 1rem is.
-  font-size: 51.5%;
+  font-size: 51.5%; // 1rem = 8.24px
+
+  @include respond(tab-land) {
+    font-size: 46.35%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 41.2%;
+  }
+
+  // @include respond(phone) {
+  //   font-size: 30.9%;
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 61.8%;
+  }
 }
 
 body {
