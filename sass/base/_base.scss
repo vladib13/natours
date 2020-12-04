@@ -19,11 +19,7 @@ html {
   @include respond(tab-port) {
     font-size: 41.2%;
   }
-
-  // @include respond(phone) {
-  //   font-size: 30.9%;
-  // }
-
+  
   @include respond(big-desktop) {
     font-size: 61.8%;
   }
@@ -32,4 +28,10 @@ html {
 body {
   padding: 3rem;
   box-sizing: border-box;
+
+  
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
 }
